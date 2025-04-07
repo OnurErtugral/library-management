@@ -29,5 +29,8 @@ AppDataSource.initialize()
     });
   })
   .catch((error) => {
-    console.error("Error connecting to database:", error);
+    console.error(
+      "Error connecting to database. Make sure to run 'yarn db:start' to start the database:",
+      error
+    );
   });
